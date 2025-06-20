@@ -28,6 +28,30 @@ async function fetchCityWeather(city) {
   }
 }
 
+async function fetchfivedayweather(city){
+  if (!city.trim()) {
+    throw new Error("City name cannot be empty");
+  }
 
+  try{
+    const response = await fetch(
+      `${BASE_URL}forecast?q=${encodeURIComponent(city)}&appid=${API_KEY}&units=metric`);
+    if (!response.ok) {
+      if (response.status === 404) {
+        throw new Error("City not found");
+      } else if (response.status === 401) {
+        throw new Error("Invalid API key");
+      } else {
+        throw new Error(`API request failed with status ${response.status}`);
+      }
+    }
 
-export { fetchCityWeather };
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error("5-day Weather API Error:", error);
+    throw error;
+  }
+}
+
+export { fetchCityWeather,fetchfivedayweather };
