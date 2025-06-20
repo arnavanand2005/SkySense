@@ -28,4 +28,6 @@ async function fetchCityWeather(city) {
   }
 }
 
+
+
 export { fetchCityWeather };
