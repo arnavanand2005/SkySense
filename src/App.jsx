@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { fetchCityWeather, fetchfivedayweather } from './service/api';
+import defaultVideo from './assets/default.mp4';
 
 const App = () => {
   const [city, setCity] = useState("");
@@ -35,8 +36,14 @@ const App = () => {
   }
 
   return (
+    <>
+    <video autoPlay muted loop id="background-video">
+          <source src={defaultVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+    </video>
+    <div className="video-overlay"></div>
+
     <div className="app-wrapper">
-      {/* Left Column - Cities */}
       <div className="cities-grid">
         <h3 className='grid-heading'>Popular Cities</h3>
         <div className="cities-list">
@@ -127,6 +134,7 @@ const App = () => {
         </div>
       )}
     </div>
+  </>
   );
 };
 
