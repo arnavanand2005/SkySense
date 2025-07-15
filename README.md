@@ -38,7 +38,7 @@ SkySense is a sleek and modern weather forecast web app that allows users to vie
 
 ## 🖼️ UI Preview
 
-<img width="1007" height="208" alt="image" src="https://github.com/user-attachments/assets/0678ac29-d21b-4d1e-adbd-f38bd8534a0b" />
+<img width="1469" height="831" alt="image" src="https://github.com/user-attachments/assets/b14a1444-f114-4df0-a7d6-4648acd39f53" />
 
 ## 📦 Installation
 
