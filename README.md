@@ -10,3 +10,39 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+# 🌤️ SkySense - Weather App
+
+SkySense is a sleek and modern weather forecast web app that allows users to view current weather conditions and a 5-day forecast for any city using real-time data from the [OpenWeatherMap API](https://openweathermap.org/api).
+
+## 🚀 Features
+
+- 🔍 Search for any city and get real-time weather data
+- 🌆 Quick access to popular cities worldwide
+- 🌦️ Displays:
+  - Current temperature
+  - Weather condition (e.g., rain, clouds, clear)
+  - Wind speed & humidity
+- 📅 5-day forecast with weather icons, highs & lows
+- 💅 Stylish UI with:
+  - Glassmorphism effect
+  - Gradient neon headings
+  - Tropical scenic background
+  - Responsive layout
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React.js, CSS (custom styling)
+- **API:** [OpenWeatherMap API](https://openweathermap.org/api)
+- **Deployment:** [Vercel](https://vercel.com)
+
+## 🖼️ UI Preview
+
+<img width="1007" height="208" alt="image" src="https://github.com/user-attachments/assets/0678ac29-d21b-4d1e-adbd-f38bd8534a0b" />
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/your-username/skysense-weather-app.git
+cd skysense-weather-app
+npm install
